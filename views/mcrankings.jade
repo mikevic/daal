@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  p #{title}
+  table.table.table-condensed.table-hover
+    tr
+      th MC
+      th Number of realizations
+    each entry in rankings
+      tr
+        td #{entry}
+        td #{entry.length}

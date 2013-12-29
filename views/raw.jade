@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  p #{title}
+  table.table.table-condensed.table-hover
+    tr
+      th EP ID
+      th TN ID
+      th Home MC
+      th Host MC
+      th Realized Date
+    each entry in list_data
+      tr
+        td #{entry.epid}
+        td #{entry.tnid}
+        td #{entry.HomeMC}
+        td #{entry.HostMC}
+        td #{entry.ReDate}
